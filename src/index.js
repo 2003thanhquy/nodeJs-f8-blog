@@ -21,9 +21,7 @@ app.use(express.json()); //js
 
 app.use(express.static(path.join(__dirname, 'public')));
 
-app.engine(
-    'hbs',
-    engine({
+app.engine('hbs',engine({
         extname: '.hbs',
     }),
 );
