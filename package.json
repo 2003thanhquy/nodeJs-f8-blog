@@ -14,14 +14,15 @@
     "type": "git",
     "url": "git+https://github.com/2003thanhquy/nodeJs-f8-blog.git"
   },
-  "lint-staged": {
-    "src/**/*.{js,json,scss}": "prettier --single-quote --trailing-comma all --tab-width 4 --write"
-  },
   "husky": {
     "hooks": {
       "pre-commit": "lint-staged"
     }
   },
+  "lint-staged": {
+    "src/**/*.{js,json,scss}": "prettier --single-quote --trailing-comma all --tab-width 4 --write"
+  },
+  
   "keywords": [
     "f8",
     "Blog"
