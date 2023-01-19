@@ -7,6 +7,12 @@ import morgan from 'morgan';
 import { engine } from 'express-handlebars';
 //
 import { route } from './resources/routes/index.js';
+
+import {connect} from './resources/db/index.js'
+
+// connect to DB
+connect();
+
 const app = express();
 const port = 3000;
 // update Change
